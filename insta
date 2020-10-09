@@ -1,0 +1,34 @@
+CACTI - MONITORAMENTO GRÁFICO 
+	-PROTOCOLO SNMP (simple netwrok manegment protocol)
+	
+INSTALAÇÃO DO CACTI:
+		-entrar no helsinque pelo cliente XP (putty)
+		-cacti cacti-spine (instalar esses dois serviços)
+		-colocar a senha do MySQL como Senai@132
+		-selecionar o apache2 como web server
+		-colocar a senha do Senai@132 novamente 
+			-INSTALAÇÃO TERMINADA 
+		
+INSTALAÇÃO DO CACTI NO NAVEGADOR:
+		-colocar o ip do helsinque pra ver se o apache ta funfando
+		-colocar /cacti e verificar se ta runfando
+		-clicar em nova instalação e clicar em next
+		-colocar o usuario e senha como admin/admin 
+			-colocar uma nova senha
+
+INTALAR O SNMP NOS HOSTS:
+		-ir em painel de controle e selecionar adicionar ou remover componenter 
+		no windows 
+		-em em management and monitoring tools e clicar em selecionar 
+		-após isso ir na maquina virtual e ir em settings 
+			-verificar se o disco de instalação está com o winXP
+		-após a verificação clicar em conected e clicar em ok 
+		-após isso, concluir a instalação.
+		
+DESABILITAR O FIREWALL
+
+
+
+vim /etc/cron.d/cacti	
+		-remover o numero 5 e colocar o 1 
+		-após isso restartar (cron.service)
